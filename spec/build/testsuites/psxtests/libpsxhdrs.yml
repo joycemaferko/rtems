@@ -513,6 +513,7 @@ source:
 - testsuites/psxtests/psxhdrs/signal/sigtimedwait.c
 - testsuites/psxtests/psxhdrs/signal/sigwait.c
 - testsuites/psxtests/psxhdrs/signal/sigwaitinfo.c
+- testsuites/psxtests/psxhdrs/signal/sig2str.c
 - testsuites/psxtests/psxhdrs/stddef/offsetof.c
 - testsuites/psxtests/psxhdrs/stdio/clearerr.c
 - testsuites/psxtests/psxhdrs/stdio/ctermid.c

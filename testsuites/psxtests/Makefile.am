@@ -924,6 +924,15 @@ psxsignal08_CPPFLAGS = $(AM_CPPFLAGS) $(TEST_FLAGS_psxsignal08) \
 endif
 endif
 
+if HAS_POSIX
+if TEST_psxsignal09
+psx_tests += psxsignal09
+psxsignal09_SOURCES = psxsignal09/init.c 
+psxsignal09_CPPFLAGS = $(AM_CPPFLAGS) $(TEST_FLAGS_psxsignal09) \
+	$(support_includes) -I$(top_srcdir)/include
+endif
+endif
+
 if TEST_psxspin01
 psx_tests += psxspin01
 psx_screens += psxspin01/psxspin01.scn
