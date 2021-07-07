@@ -1,0 +1,31 @@
+*** BEGIN OF TEST SIG2STR AND STR2SIG ***
+SIGRTMIN is 27 and SIGRTMAX is 31
+
+Calling sig2str: 
+The string test1 is: HUP
+The string test2 is: QUIT
+The string test3 is: RTMIN
+The string test4 is: RTMIN+2
+The string test5 is: RTMAX
+The string test6 is: RTMAX-1
+The string test7 is: KILL
+The string test8 is: Unknown signal 200
+The string test9 is: Unknown signal 0
+
+Calling str2sig: 
+Result 1 is: 13
+Result 2 is: 18
+Result 3 is: 9
+Result 4 is: 10
+Result 5 is: 27
+Result 6 is: 28
+Result 7 is: 29
+Result 8 is: 0
+Result 9 is: 0
+
+Calling str2sig using the result from previous call to sig2str
+Result 1 is: 1
+Result 2 is: 3
+Result 3 is: 27
+
+*** END OF TEST SIG2STR AND STR2SIG ***

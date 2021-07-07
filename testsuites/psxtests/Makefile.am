@@ -927,6 +927,8 @@ endif
 if HAS_POSIX
 if TEST_psxsignal09
 psx_tests += psxsignal09
+psx_screens += psxsignal09/psxsignal09.scn
+psx_docs += psxsignal09/psxsignal09.doc
 psxsignal09_SOURCES = psxsignal09/init.c 
 psxsignal09_CPPFLAGS = $(AM_CPPFLAGS) $(TEST_FLAGS_psxsignal09) \
 	$(support_includes) -I$(top_srcdir)/include
